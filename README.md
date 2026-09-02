@@ -35,7 +35,7 @@ python3 -m http.server 8000
 
 ## Git — inicializar y subir a GitHub
 
-Asumo que ya tienes un repositorio vacío creado en GitHub (`ejemplo: github.com/tu-usuario/quetzal-site`). Ajusta la URL del remoto.
+Asumo que ya tienes un repositorio vacío creado en GitHub (`ejemplo: github.com/osregh0st/quetzal-site`). Ajusta la URL del remoto.
 
 ```bash
 cd quetzal-site
@@ -43,7 +43,7 @@ git init
 git add .
 git commit -m "Initial commit: sitio Café Terraza Quetzal"
 git branch -M main
-git remote add origin https://github.com/tu-usuario/quetzal-site.git
+git remote add origin https://github.com/osregh0st/quetzal-site.git
 git push -u origin main
 ```
 
@@ -58,7 +58,7 @@ git push
 ## Clonar el repo (git clone)
 
 ```bash
-git clone https://github.com/tu-usuario/quetzal-site.git
+git clone https://github.com/osregh0st/quetzal-site.git
 cd quetzal-site
 ```
 
@@ -68,16 +68,16 @@ Si no quieres instalar/usar git, puedes bajar el repo como tarball directamente:
 
 ```bash
 # Rama main como .tar.gz (usa codeload.github.com)
-curl -L -o quetzal-site.tar.gz https://codeload.github.com/tu-usuario/quetzal-site/tar.gz/refs/heads/main
+curl -L -o quetzal-site.tar.gz https://codeload.github.com/osregh0st/quetzal-site/tar.gz/refs/heads/main
 tar -xzf quetzal-site.tar.gz
 
 # Alternativa: .zip vía GitHub API
-curl -L -o quetzal-site.zip https://api.github.com/repos/tu-usuario/quetzal-site/zipball/main
+curl -L -o quetzal-site.zip https://api.github.com/repos/osregh0st/quetzal-site/zipball/main
 ```
 
 > **Nota Windows/PowerShell:** `curl` en PowerShell es un alias de `Invoke-WebRequest`, que no soporta las mismas flags (`-L`, `-o`) igual que el curl real. Usa `curl.exe` explícitamente para forzar el binario real:
 > ```powershell
-> curl.exe -L -o quetzal-site.tar.gz https://codeload.github.com/tu-usuario/quetzal-site/tar.gz/refs/heads/main
+> curl.exe -L -o quetzal-site.tar.gz https://codeload.github.com/osregh0st/quetzal-site/tar.gz/refs/heads/main
 > ```
 
 ## Deploy sugerido
